@@ -18,16 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-01-bpT">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Lu-4X-6aB">
+                                <rect key="frame" x="128" y="526" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="KV7-sF-xPp"/>
+                                </constraints>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR CHANGER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upz-Xk-nJN">
+                                <rect key="frame" x="116" y="20" width="144" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="wOF-fw-9TD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1S-01-bpT">
+                                <rect key="frame" x="84" y="308" width="208" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="I change colors"/>
                                 <connections>
                                     <action selector="colorClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0R-S6-qnr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n1S-01-bpT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3nU-7r-OPc"/>
+                            <constraint firstItem="Upz-Xk-nJN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="45t-cI-pei"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Lu-4X-6aB" secondAttribute="bottom" constant="112" id="E5u-pE-SdR"/>
+                            <constraint firstItem="n1S-01-bpT" firstAttribute="centerX" secondItem="Upz-Xk-nJN" secondAttribute="centerX" id="PKT-bD-vqM"/>
+                            <constraint firstItem="Upz-Xk-nJN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VVt-eZ-drt"/>
+                            <constraint firstItem="7Lu-4X-6aB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="d6g-eu-h4e"/>
+                            <constraint firstItem="7Lu-4X-6aB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZ2-Wp-h38"/>
+                            <constraint firstItem="n1S-01-bpT" firstAttribute="centerX" secondItem="7Lu-4X-6aB" secondAttribute="centerX" id="gH7-5r-kRQ"/>
+                            <constraint firstItem="Upz-Xk-nJN" firstAttribute="centerX" secondItem="n1S-01-bpT" secondAttribute="centerX" id="nSk-id-2mC"/>
+                            <constraint firstItem="Upz-Xk-nJN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rsh-s1-Hf4"/>
+                            <constraint firstItem="n1S-01-bpT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vqQ-rV-bTW"/>
+                            <constraint firstItem="7Lu-4X-6aB" firstAttribute="centerX" secondItem="Upz-Xk-nJN" secondAttribute="centerX" id="xgg-JQ-pg0"/>
+                            <constraint firstItem="7Lu-4X-6aB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yVJ-rh-mHc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -36,6 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
